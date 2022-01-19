@@ -246,12 +246,12 @@ void checkHowMany () {
 }
 
 void checkIfGameOver() {
-  if (circleWins()) { // if circle wins the ai for circle wins the game and the player x loses  
+  if (circleWins()) { // if the AI wins the game and the player loses the game
     gameOver("You Died"); //  if circle wins player will get a game over screen
-  } else if (crossWins()) { // if circle loses the game the player wins the game
-    gameOver("You win"); // you win the game if you beat circle
+  } else if (crossWins()) { // if the AI loses the game the player wins the game
+    gameOver("You win"); // you win the game if you beat the AI
   } else if (tied) { // the game will tie if no one wins
-    gameOver("Tied"); // true the game will tied
+    gameOver("Tied"); // true the game will tied if the player and the AI tied
   } //connect the String message (line 259)
 }
 
